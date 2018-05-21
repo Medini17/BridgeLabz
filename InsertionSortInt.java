@@ -8,7 +8,7 @@ import com.bridgelabz.utility.Utility;
 /**
  * Created By:Medini P.D
  * Date:- 21/05/2018
- * Purpose:
+ * Purpose: To sort the given integer array elements using insertion sort.
  */
 public class InsertionSortInt {
 	

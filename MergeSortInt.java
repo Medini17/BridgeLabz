@@ -7,8 +7,8 @@ import com.bridgelabz.utility.Utility;
 
 /**
  * Created By:Medini P.D
- * Date:- 19/05/2018
- * Purpose:
+ * Date:- 21/05/2018
+ * Purpose: To sort the given array elements using merge sort.
  */
 public class MergeSortInt
 {
