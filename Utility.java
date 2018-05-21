@@ -100,12 +100,14 @@ public boolean isLeapYear(int year) {
 		public int binarySearch(int[] ar, int key) {
 	        int start = 0;
 	        int end = ar.length - 1;
-	        while (start <= end) {
+	        while (start <= end)
+          {
 	            int mid = (start + end) / 2;
-	            if (key == ar[mid]) {
+	            if (key == ar[mid]) 
+	            {
 	                return mid;
 	            }
-	            if (key < ar[mid]) {
+	            else if (key < ar[mid]) {
 	               	end = mid - 1;
 	            } else {
 	               	start = mid + 1;
@@ -120,7 +122,7 @@ public boolean isLeapYear(int year) {
 	    	int first = 0;
 	    	int last  = names.length-1;
 	 
-	    	while (first < last) 
+	    	while (first <= last) 
 	    	{
 	        	int mid = (first + last) / 2;
 	        	if(key==names[mid]) 
