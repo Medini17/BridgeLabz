@@ -1,13 +1,17 @@
 package com.bridgelabz.utility;
 
+import java.sql.Date;
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
 import java.util.Arrays;
 import java.util.Random;
 import java.util.Scanner;
 
 public class Utility 
-{   Scanner sc=new Scanner(System.in);
+{   Scanner sc=new Scanner(System.in);//do need to mention in every methods 
+//since it is global call.
 
-
+//------------------------------------------------------------------------------------------
     // To get a String as an input
     public String getString()
     {
@@ -17,30 +21,30 @@ public class Utility
     	
     }
     
-    
+ //---------------------------------------------------------------------------------------------   
     //To get a integer as an input
- public int inputInteger() {
+    public int inputInteger()
+ {
  	System.out.println("enter the input");
 	return sc.nextInt();
 	
-}
+  }
  
- 
+//------------------------------------------------------------------------------------------
  //To get a double as an input
- public Double inputDouble() {
+ public Double inputDouble()
+   {
  	System.out.println("enter the input");
-      return sc.nextDouble();
-		
+      return sc.nextDouble();	
 	}
- 
+ //--------------------------------------------------------------------------------------------
  //To get a array as an input
  public int[] inputArray() {
 	 int n=sc.nextInt();
      int arr[]=new int[n];
 	return arr;
-
  }
-  
+ //--------------------------------------------------------------------------------------------
  //To find the leap year
 public boolean isLeapYear(int year) {
 	if((year%4 == 0)&&((year%100 == 0) && (year%400 == 0)))
@@ -48,7 +52,19 @@ public boolean isLeapYear(int year) {
 	else
 		return false;
 }
+//-----------------------------------------------------------------------------------------------
+//To check given two elements are anagram or not
+  public boolean anag(String s1, String s2)
+  {  
+	  char[] s1Array = s1.toCharArray();
+      char[] s2Array = s2.toCharArray();
 
+       Arrays.sort(s1Array);
+       Arrays.sort(s2Array);
+       boolean status=Arrays.equals(s1Array, s2Array);
+       return status;	  
+  }
+//---------------------------------------------------------------------------------------------
 //Take number of random number to generate as input and return array of random number
 	public int[] getRandomArray(int number){
 		Random randomGenerator = new Random();
@@ -58,7 +74,7 @@ public boolean isLeapYear(int year) {
 		}
 		return array;
 	}
-	
+//----------------------------------------------------------------------------------------------	
 	// To swap the given strings
 	 public static String swap(String a, int i, int j)
 	    {
@@ -69,6 +85,7 @@ public boolean isLeapYear(int year) {
 	        charArray[j] = temp;
 	        return String.valueOf(charArray);
 	    }
+//----------------------------------------------------------------------------------------------
 	 //To find the power of a given number
 	 public int power(int n)
 	 {
@@ -76,8 +93,7 @@ public boolean isLeapYear(int year) {
 	      System.out.println();
 	       return n;  
 	 }
-	 
-	 
+//--------------------------------------------------------------------------------------------	 
    // To sort the array elements using insertion sort
 	 public String[] insertionSort(String[] a)
      {
@@ -96,6 +112,7 @@ public boolean isLeapYear(int year) {
      
 	 return a;
 }
+//-------------------------------------------------------------------------------------------
 	//Binary Search for integer
 		public int binarySearch(int[] ar, int key) {
 	        int start = 0;
@@ -116,15 +133,15 @@ public boolean isLeapYear(int year) {
 	        }
 	        return -1;
 	   	 }
-
+//--------------------------------------------------------------------------------------------
 		//Binary Search for String
-		public int binarySearchString(String[] names, String key) {
+		public <T extends Comparable> int binarySearchString(T[] names, T key) {
 	    	int first = 0;
-	    	int last  = names.length-1;
-	 
+	        int last  = names.length-1;
+	        int mid;
 	    	while (first <= last) 
 	    	{
-	        	int mid = (first + last) / 2;
+	        	 mid = (first + last) / 2;
 	        	if(key==names[mid]) 
 	        	{
 	        		return mid;
@@ -140,7 +157,7 @@ public boolean isLeapYear(int year) {
 	    	}		
 	    	return -1;
 		}
-
+//------------------------------------------------------------------------------------------
 		//Bubble Sort for Integer
 		public int[] bubbleSort(int a[])
 	   	 {
@@ -160,11 +177,11 @@ public boolean isLeapYear(int year) {
 	    	}
 			return a;
 		}
-
+//--------------------------------------------------------------------------------------------
 		//Bubble Sort for String
-		public String[] bubbleSortString(String a[])
+		public <T extends Comparable>T[] bubbleSortString(T a[])
 	   	 {
-	        String temp;
+	        T temp;
 	        for(int i = 0; i < a.length; i++)
 	       	{
 	            for(int j = 1; j < (a.length -i); j++)
@@ -180,7 +197,7 @@ public boolean isLeapYear(int year) {
 	    	}
 			return a;
 		}
-
+//--------------------------------------------------------------------------------------------------
 		//Insertion sort for integer
 		public int[] insertionSort(int a[])
 		{
@@ -198,10 +215,10 @@ public boolean isLeapYear(int year) {
 			}
 			return a;
 		}
-		
+//-----------------------------------------------------------------------------------------------------------		
 		//Insertion sort for String
-		public String[] insertionSortString(String a[]){
-			String temp;
+		public <T extends Comparable>T[] insertionSortString(T a[]){
+			T temp;
 			for(int i=1;i<a.length;i++){
 				for(int j=i;j>0;j--){
 					if(a[j].compareTo(a[j-1])<0){
@@ -214,7 +231,8 @@ public boolean isLeapYear(int year) {
 				}
 			}
 			return a;
-		}
+		}	
+	//-------------------------------------------------------------------------------------------------
 		//merge sort to sort the elements.
 		private int[] array;
         private int[] tempMergArr;
@@ -266,4 +284,27 @@ public boolean isLeapYear(int year) {
             }
      
         }
+//-------------------------------------------------------------------------------------------------
+
+//Function take String in dd/mm/yyyy format and return Date Object
+public Date printDate(String date){
+	SimpleDateFormat sdf = new SimpleDateFormat("dd/mm/yyyy");
+	try{
+		return (Date) sdf.parse(date);
+	}
+	catch(ParseException pe){
+		return null;
+	}
+  }
 }
+
+
+
+
+
+
+
+
+
+
+
