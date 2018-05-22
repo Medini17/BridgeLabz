@@ -1,6 +1,3 @@
-/**
- * 
- */
 package com.bridgelabz.AlgorithmPrograms;
 
 import java.util.Arrays;
@@ -20,14 +17,8 @@ public class Anagram {
 		String s1=u.getString();
 		System.out.println("string2");
 		String s2=u.getString();
-		   char[] s1Array = s1.toCharArray();
-           char[] s2Array = s2.toCharArray();
-
-           Arrays.sort(s1Array);
-           Arrays.sort(s2Array);
-           boolean status = Arrays.equals(s1Array, s2Array);
-           
-	    if(status)
+		   boolean res=u.anag(s1, s2);
+	    if(res==true)
             System.out.println("anagrams");
         else 
             System.out.println("not anagrams");

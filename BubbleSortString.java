@@ -10,8 +10,10 @@ import com.bridgelabz.utility.Utility;
  * Date:- 21/05/2018
  * Purpose: To sort the given string array using bubble sort.
  */
-public class BubbleSortString {
-	public static void main(String[] args) {
+public class BubbleSortString 
+{
+	public static void main(String[] args) 
+	{
 		int i,j;
 		String temp;
 		Utility u=new Utility();
@@ -22,16 +24,15 @@ public class BubbleSortString {
 			{
 				a[i]=u.getString();
 			}
-		 System.out.println("enter the ket string to find");
-		String k=u.getString();
-		String[] a1=u.bubbleSortString(a);
-		int m=u.binarySearchString(a1, k);
 		
-		if(m==-1)
-		{
-			System.out.println("String is not found");
-		}
-		else
-		System.out.println("String found");
-    }
-}
+
+			String[] a1=u.bubbleSortString(a);
+			
+				for(i=0; i<a1.length; i++)
+	                   {
+		              System.out.print(a1[i]+" "); 
+	                   }		
+
+	          }
+	}
+

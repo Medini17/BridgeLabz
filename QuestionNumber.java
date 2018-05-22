@@ -5,7 +5,8 @@ import com.bridgelabz.utility.Utility;
 /**
  * Created By:Medini P.D
  * Date:- 19/05/2018
- * Purpose:
+ * Purpose:Takes a numbers (N), asks you to think of a number between 0 and N-1, where N = 2^n,
+ * and always guesses the answer with n questions.
  */
 public class QuestionNumber {
 		static int range,count,lower,upper,middle;

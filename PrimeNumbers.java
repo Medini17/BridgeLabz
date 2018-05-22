@@ -8,7 +8,7 @@ import com.bridgelabz.utility.Utility;
 /**
  * Created By:Medini P.D
  * Date:- 19/05/2018
- * Purpose:To find the prime number in given range
+ * Purpose:To find the prime number in given range.
  */
 public class PrimeNumbers 
 {
@@ -41,4 +41,3 @@ public class PrimeNumbers
         System.out.println();
 	  }
 }
-   

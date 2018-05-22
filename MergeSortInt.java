@@ -1,6 +1,3 @@
-/**
- * 
- */
 package com.bridgelabz.AlgorithmPrograms;
 
 import com.bridgelabz.utility.Utility;
