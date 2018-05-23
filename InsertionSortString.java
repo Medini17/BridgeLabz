@@ -23,7 +23,7 @@ public class InsertionSortString {
 					a[i]=u.getString();
 				}
 			
-			String[] a1=u.bubbleSortString(a);
+			Comparable[] a1=u.bubbleSortString(a);
 			
 				for(i=0; i<a.length; i++)
 	                   {

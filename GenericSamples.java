@@ -8,7 +8,7 @@ import com.bridgelabz.utility.Utility;
 /**
  * Created By:Medini P.D
  * Date:- 22/05/2018
- * Purpose:
+ * Purpose:To find the maximum of given number using genarics.
  */
 public class GenericSamples {
 	
@@ -41,16 +41,10 @@ public class GenericSamples {
 		String a=u.getString();
 		String b=u.getString();
 		String c=u.getString();
-		String res=max1(a,b,c);
+		String res=max2(a,b,c);
 		System.out.println(res);
-		
-		System.out.println("enter the values for j, k, l");
-        int j=u.inputInteger();
-		int k=u.inputInteger();
-		int l=u.inputInteger();
-        int d1=max2(j,k,l);
-		System.out.println(d1);
-
+	
 	}
 	
 }
+//-------------------------------------------------------------------------------------------------------

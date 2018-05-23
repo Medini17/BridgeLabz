@@ -22,7 +22,7 @@ public class BinarySearchString
 			a[i]=u.getString();
 		}
 	
-	String[] a1=u.bubbleSortString(a);
+	Comparable[] a1=u.bubbleSortString(a);
 	
 	System.out.println("enter the key element");
 	String k=u.getString();

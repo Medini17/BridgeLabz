@@ -26,7 +26,7 @@ public class BubbleSortString
 			}
 		
 
-			String[] a1=u.bubbleSortString(a);
+			Comparable[] a1=u.bubbleSortString(a);
 			
 				for(i=0; i<a1.length; i++)
 	                   {
@@ -35,4 +35,5 @@ public class BubbleSortString
 
 	          }
 	}
+
 
