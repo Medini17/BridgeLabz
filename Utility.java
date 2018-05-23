@@ -7,7 +7,7 @@ import java.util.Arrays;
 import java.util.Random;
 import java.util.Scanner;
 
-public class Utility 
+public class Utility<T> 
 {   Scanner sc=new Scanner(System.in);//do need to mention in every methods 
 //since it is global call.
 
@@ -234,12 +234,13 @@ public boolean isLeapYear(int year) {
 		}	
 	//-------------------------------------------------------------------------------------------------
 		//merge sort to sort the elements.
-		private int[] array;
+		private int[] array1;
         private int[] tempMergArr;
         private int length;
+		private int[] array;
       
-        public int[] mergesort(int inputArr[]) {
-            this.array = inputArr;
+        public int[] mergesort(int[] inputArr) {
+            this.array1 = inputArr;
             this.length = inputArr.length;
             this.tempMergArr = new int[length];
             doMergeSort(0, length - 1);
@@ -262,23 +263,23 @@ public boolean isLeapYear(int year) {
         private void mergeParts(int lowerIndex, int middle, int higherIndex) {
      
             for (int i = lowerIndex; i <= higherIndex; i++) {
-                tempMergArr[i] = array[i];
+                tempMergArr[i] = array1[i];
             }
             int i = lowerIndex;
             int j = middle + 1;
             int k = lowerIndex;
             while (i <= middle && j <= higherIndex) {
                 if (tempMergArr[i] <= tempMergArr[j]) {
-                    array[k] = tempMergArr[i];
+                    array1[k] = tempMergArr[i];
                     i++;
                 } else {
-                    array[k] = tempMergArr[j];
+                    array1[k] = tempMergArr[j];
                     j++;
                 }
                 k++;
             }
             while (i <= middle) {
-                array[k] = tempMergArr[i];
+                array1[k] = tempMergArr[i];
                 k++;
                 i++;
             }
@@ -296,15 +297,48 @@ public Date printDate(String date){
 		return null;
 	}
   }
+
+//------------------------------------------------------------------------------------------
+//Binary to Decimal Conversion
+public static int BinaryToDecimal(int binaryNumber)
+{
+    int decimal = 0;
+    int p = 0;
+    while(true){
+      if(binaryNumber == 0)
+      {
+        break;
+      } else
+      {
+          int temp = binaryNumber%10;
+          decimal += temp*Math.pow(2, p);
+          binaryNumber = binaryNumber/10;
+          p++;
+       }
+    }
+    return decimal;
+  }
+
+//--------------------------------------------------------------------
+//Decimal to binary Conversion
+public static int  binary(int num)
+ {
+   int i = 0;    
+   int  bin[]=new int[100]; 
+    bin[0]=0;
+   while(num>0)
+    {
+    bin[i++] = num%2;
+    num = num/2;
+    } 
+    for(int j =i-1;j >= 0;j--)
+    {
+       System.out.print(bin[j]);
+    }
+	return 0;
+ }
+
 }
-
-
-
-
-
-
-
-
 
 
 
