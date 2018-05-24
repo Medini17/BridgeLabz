@@ -6,8 +6,7 @@ import com.bridgelabz.utility.Utility;
 /**
  * Created By:Medini P.D
  * Date:- 18/05/2018
- * Purpose:2D arrays of integers and doubles from standard input and printing 
- * them out to standard output.
+ * Purpose:
  */
 public class ArrayDemo 
 {

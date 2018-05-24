@@ -5,7 +5,7 @@ import com.bridgelabz.utility.Utility;
 /**
  * Created By:Medini P.D
  * Date:- 18/05/2018
- * Purpose:Prints the Nth harmonic number: 1/1 + 1/2 + ... + 1/N
+ * Purpose:
  */
 public class HarmonicSeries {
 

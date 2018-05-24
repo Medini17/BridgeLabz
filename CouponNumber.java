@@ -1,10 +1,5 @@
 package com.bridgelabz.functionalprograms;
 
-/**
- * Created By:Medini P.D
- * Date:- 18/05/2018
- * Purpose:
- */
 public class CouponNumber {
 
 	public static void main(String[] args) 

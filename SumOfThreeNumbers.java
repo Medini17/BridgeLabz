@@ -5,8 +5,7 @@ import com.bridgelabz.utility.Utility;
 /**
  * Created By:Medini P.D
  * Date:- 19/05/2018
- * Purpose:Reads in N integers and counts the number of triples that 
- * sum to exactly 0.
+ * Purpose:
  */
 public class SumOfThreeNumbers
 {

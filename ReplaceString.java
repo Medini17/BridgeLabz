@@ -4,7 +4,7 @@ import com.bridgelabz.utility.Utility;
 /**
  * Created By:Medini P.D
  * Date:- 19/05/2018
- * Purpose: To replace Username with the given String.
+ * Purpose:
  */
 public class ReplaceString {
 

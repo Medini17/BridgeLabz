@@ -5,7 +5,7 @@ import com.bridgelabz.utility.Utility;
 /**
  * Created By:Medini P.D
  * Date:- 18/05/2018
- * Purpose:check whether it is a Leap Year or not.
+ * Purpose:
  */
 public class LeapYear {
 

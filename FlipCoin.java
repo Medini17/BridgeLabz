@@ -5,8 +5,7 @@ import com.bridgelabz.utility.Utility;
 /**
  * Created By:Medini P.D
  * Date:- 18/05/2018
- * Purpose:The   number   of   times   to   Flip   Coin.   Ensure
- * it   is   positive   integer  and to tell heads or tails!. 
+ * Purpose:
  */
 public class FlipCoin {
 	

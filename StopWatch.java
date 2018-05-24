@@ -5,8 +5,7 @@ import java.util.Scanner;
 /**
  * Created By:Medini P.D
  * Date:- 18/05/2018
- * Purpose:This stopwatch program is for measuring the time that elapses
- * between the start and end Time. ­
+ * Purpose:
  */
 public class StopWatch {
 	public long startTimer=0;

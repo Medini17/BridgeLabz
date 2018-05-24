@@ -5,10 +5,7 @@ import com.bridgelabz.utility.Utility;
 /**
  * Created By:Medini P.D
  * Date:- 18/05/2018
- * Purpose:to   find   the   roots   of   the   equation 
- * a*x*x   +   b*x   +   c.  
- * Since   the   equation   is   x*x,   hence   there   are 
- *   2   roots.   The   2   roots   of   the   equation  
+ * Purpose:
  */
 public class QuadraticEquation
 {
