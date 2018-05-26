@@ -15,44 +15,42 @@ import com.bridgelabz.utility.Utility;
  */
 public class Gambling {
 
-		public static void main(String[] args) 
-		{	
+	public static void main(String[] args) {
 
-			Utility u=new Utility();
-			System.out.println("enter the stake value");
-		 int $Stake = u.inputInteger();
-			System.out.println("enter the goal value");
+		Utility u = new Utility();
 
-		 int $Goal = u.inputInteger();
-			System.out.println("enter the noOfTimes");
+		System.out.println("enter the stake value");
+		int Stake = u.inputInteger();
 
-		 int noOfTimes = u.inputInteger();
+		System.out.println("enter the goal value");
+		int Goal = u.inputInteger();
 
-			int bets = 0;        // total number of bets made
-			int wins = 0;        // total number of games won
+		System.out.println("enter the noOfTimes");
+		int noOfTimes = u.inputInteger();
 
-			// repeat number of times
-			for (int i=0; i< noOfTimes; i++) 
-			{
-				int cash = $Stake;
-		            
-				while (cash > 0 && cash < $Goal)
-				{
-					bets++;
-		        
-					if (Math.random() < 0.5) 
-						cash++;     // win $1
-					else                     
-						cash--;     // lose $1
-				}
-		            if (cash == $Goal) 
-		            	wins++;                // to find no. of wins   
+		int bets = 0;
+		int wins = 0;
+
+		// repeat number of times
+		for (int i = 0; i < noOfTimes; i++) {
+			int cash = Stake;
+
+			while (cash > 0 && cash < Goal) {
+				bets++;
+
+				if (Math.random() < 0.5)
+					cash++;
+				else
+					cash--;
 			}
-
-			// print results
-			System.out.println();
-			System.out.println(wins + " wins of " + noOfTimes);
-			System.out.println("Percent of games won = " + 100.0 * wins / noOfTimes);
-			System.out.println("Avg # bets           = " + 1.0 * bets / noOfTimes);
+			if (cash == Goal)
+				wins++; // to find no. of wins
 		}
+
+		// print results
+		System.out.println();
+		System.out.println(wins + " wins of " + noOfTimes);
+		System.out.println("Percent of games won = " + 100.0 * wins / noOfTimes);
+		System.out.println("Avg bets           = " + 1.0 * bets / noOfTimes);
 	}
+}

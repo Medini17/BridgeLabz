@@ -9,25 +9,22 @@ import com.bridgelabz.utility.Utility;
  */
 public class HarmonicSeries {
 
-	public static double harmonic(int n)
-	{
-	  double sum=0.0;
-	    if(n!=0)
-	  {
-	     for(double i=1; i<=n; i++)
-	   {
-	     sum=sum+(1/i);
-	   }
+	public static double harmonic(int n) {
+		double sum = 0.0;
+		if (n != 0) {
+			for (double i = 1; i <= n; i++) {
+				sum = sum + (1 / i);
+			}
+		}
+		return sum;
+
 	}
-	  return sum;
-	  
-	}
-	public static void main(String[] args)
-	{
-		Utility u=new Utility();
+
+	public static void main(String[] args) {
+		Utility u = new Utility();
 		System.out.println("enter the input");
-	 int n = u.inputInteger();
-      double res=harmonic(n);
-	  System.out.println("Nth value is=" +res);
+		int n = u.inputInteger();
+		double res = harmonic(n);
+		System.out.println("Nth value is=" + res);
 	}
-	}
+}

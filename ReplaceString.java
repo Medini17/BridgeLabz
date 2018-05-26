@@ -9,10 +9,10 @@ import com.bridgelabz.utility.Utility;
 public class ReplaceString {
 
 	public static void main(String[] args) {
-		Utility u=new Utility();
-		String msg="Hi <<Username>>, How are you?";
-		String name = u.getString(); 
-		msg=msg.replaceAll("<<Username>>", name);
+		Utility u = new Utility();
+		String msg = "Hi <<Username>>, How are you?";
+		String name = u.getString();
+		msg = msg.replaceAll("<<Username>>", name);
 		System.out.println(msg);
 	}
 
