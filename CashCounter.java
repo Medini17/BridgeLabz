@@ -4,12 +4,15 @@
 package com.bridgelabz.DataStructure;
 
 import com.bridgelabz.utility.Utility;
+
 /**
  * Created By:Medini P.D
  * Date:- 19/05/2018
  * Purpose:
  */
-public class CashCounter {
+
+public class CashCounter 
+{ 
 	public static void main(String args[])
 	{ 
 		Utility u=new Utility();
@@ -18,13 +21,13 @@ public class CashCounter {
 		do
 		{ 
 			System.out.println();
-		   	System.out.println("Welcome to the Banking Cash Counter");
-		   	System.out.println("Press 1 for Deposit");
-		   	System.out.println("Press 2 for Withdraw");
-		   	System.out.println("Press 3 for Number of people in the Queue ");
-		   	System.out.println("Press 4 for Exit");
+		   	System.out.println("------------Banking Cash Counter-----------");
+		   	System.out.println("1.Deposit");
+		   	System.out.println("2.Withdraw");
+		   	System.out.println("3.Number of people in the Queue ");
+		   	System.out.println("4.Exit");
 		   	System.out.println();
-		   	System.out.println("Enter your choice:");
+		   	System.out.println("Enter your choice: ");
 		   	int choice=u.inputInteger();
 		   	switch (choice) 
 		   	{
@@ -37,7 +40,7 @@ public class CashCounter {
 			   		System.out.println("Enter the amount you want to Withdraw ");
 					u.inputInteger();
 			   		q.remove();
-			   		System.out.println("Your Available Balance is: "); 
+			   		System.out.println(" Your Available Balance is: "); 
 			   		q.display();
 			   		break;
 			case 3:
@@ -46,12 +49,10 @@ public class CashCounter {
 		   	case 4:
 			   		System.exit(0);
 		   	default: 
-			   		System.out.println("You have entered wrong choice");
+			   		System.out.println("You entered wrong choice");
 			   		break;
 		   	}
 	   	}
 		while(ch<5);
-	
 	}		
 }	
-
