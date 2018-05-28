@@ -10,12 +10,12 @@ import com.bridgelabz.utility.Utility;
  *  i.   Swap   nibbles   and   find   the   new   number. 
  *  ii.   Find   the   resultant   number   is   the   number   is   a   power   of   2.
  */
-public class SwapNibble {
+public class IntegerToBinary {
 
 	public static int swapNibbles(int x)
 
 	{
-		return ((x & 0x0F) << 4 | (x & 0xF0) >> 4); /* 1111 & 1110 */
+		return ((x & 0x0F) << 4 | (x & 0xF0) >> 4);
 	}
 
 	public static void main(String arg[]) {

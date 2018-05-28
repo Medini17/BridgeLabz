@@ -11,24 +11,22 @@ import com.bridgelabz.utility.Utility;
  * Purpose: To sort the given integer array elements using insertion sort.
  */
 public class InsertionSortInt {
-	
+
 	public static void main(String[] args) {
-		int i,j,temp;
-		Utility u=new Utility();
-		int n=u.inputInteger();
+		int i, j, temp;
+		Utility u = new Utility();
+		int n = u.inputInteger();
 		System.out.print("enter the array elements");
 		System.out.println();
-		int[] a=new int[n];
-		 for( i=0; i<a.length; i++)
-			{
-				a[i]=u.inputInteger();
-			}
-		
-		int[] a1=u.insertionSort(a);
-		
-			for(i=0; i<a1.length; i++)
-                   {
-	              System.out.print(a1[i]+" "); 
-                   }		
-          }
+		int[] a = new int[n];
+		for (i = 0; i < a.length; i++) {
+			a[i] = u.inputInteger();
+		}
+
+		int[] a1 = u.insertionSort(a);
+
+		for (i = 0; i < a1.length; i++) {
+			System.out.print(a1[i] + " ");
+		}
+	}
 }

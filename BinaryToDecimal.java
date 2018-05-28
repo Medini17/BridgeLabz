@@ -11,14 +11,13 @@ import com.bridgelabz.utility.Utility;
  * Purpose: To convert the given binary number to the decimal
  */
 public class BinaryToDecimal {
-	 
-	 public static void main(String[] args)
-	 {
-		 Utility u=new Utility();
-		 int n=u.inputInteger();
-		 int k=u.BinaryToDecimal(n);
-	     System.out.println(k);
-		 
-	 }
-	 
+
+	public static void main(String[] args) {
+		Utility u = new Utility();
+		int n = u.inputInteger();
+		int k = u.BinaryToDecimal(n);
+		System.out.println(k);
+
+	}
+
 }

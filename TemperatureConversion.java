@@ -14,19 +14,19 @@ import com.bridgelabz.utility.Utility;
  * Fahrenheit:       (°C   ×   9/5)   +   32   =   °F Fahrenheit   to  
  *  Celsius:       (°F   −   32)   x   5/9   =   °C 
  */
-    public class TemperatureConversion {
+class TemperatureConversion {
 	public static void main(String[] args) {
-	Utility u=new Utility();
-			
-	System.out.print("Enter the temperature in Fahrenheit: ");
-    double fahrenheit=u.inputDouble();
-    double celsius=(fahrenheit-32)*5/9;
-    System.out.println("Temperature in Celsius: "+celsius);
-    
-    System.out.print("Enter the temperature in Celsius: ");
-    double celsius1=u.inputDouble();
-    double fahrenheit1=(celsius1*9/5)+32;
-    System.out.println("Temperature in Fahrenheit: "+fahrenheit1);
+		Utility u = new Utility();
+
+		System.out.print("Enter the temperature in Fahrenheit: ");
+		double fahrenheit = u.inputDouble();
+		double celsius = (fahrenheit - 32) * 5 / 9;
+		System.out.println("Temperature in Celsius: " + celsius);
+
+		System.out.print("Enter the temperature in Celsius: ");
+		double celsius1 = u.inputDouble();
+		double fahrenheit1 = (celsius1 * 9 / 5) + 32;
+		System.out.println("Temperature in Fahrenheit: " + fahrenheit1);
 
 	}
 

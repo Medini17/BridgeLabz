@@ -7,35 +7,26 @@ import com.bridgelabz.utility.Utility;
  * Date:- 21/05/2018
  * Purpose: To search the given string in the given string array.
  */
-public class BinarySearchString 
-{
-	 public static void main(String[] args) {
-			int i,j;
-			String temp;
-			Utility u=new Utility();
-			int n=u.inputInteger();
-			System.out.print("enter the array elements");
-			String[] a=new String[n+1];
-	  
-   for( i=0; i<a.length; i++)
-		{
-			a[i]=u.getString();
+public class BinarySearchString {
+	public static void main(String[] args) {
+		int i, j;
+		String temp;
+
+		Utility u = new Utility();
+		int n = u.inputInteger();
+		System.out.print("enter the array elements");
+		String[] a = new String[n + 1];
+
+		for (i = 0; i < a.length; i++) {
+			a[i] = u.getString();
 		}
-	
-	Comparable[] a1=u.bubbleSortString(a);
-	
-	System.out.println("enter the key element");
-	String k=u.getString();
-	String[] ar=u.insertionSort(a);
-	
-	int ar1=u.binarySearchString(ar,k );
-	if(ar1==-1)
-	{
-		   System.out.println("element is not found");
-	}
-		else
-			System.out.println("element is found" );
+
+		Comparable[] a1 = u.bubbleSortString(a);
+
+		System.out.println("enter the key element");
+		String k = u.getString();
+		String[] ar = u.insertionSort(a);
+		u.binarySearchString(ar, k);
+		
 	}
 }
-
-

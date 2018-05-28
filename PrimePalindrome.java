@@ -2,15 +2,16 @@
  * 
  */
 package com.bridgelabz.AlgorithmPrograms;
+import java.util.Arrays;
 
 import com.bridgelabz.utility.Utility;
 
 /**
  * Created By:Medini P.D
  * Date:- 19/05/2018
- * Purpose:To find the prime number in given range.
+ * Purpose:
  */
-public class PrimeNumbers {
+public class PrimePalindrome {
 	public static boolean isPrime(int i) {
 		for (int j = 2; j < i; j++) {
 			if (i % j == 0) {
@@ -28,9 +29,17 @@ public class PrimeNumbers {
 		int b = u.inputInteger();
 		for (int k = a; k <= b; k++) {
 			if (isPrime(k)) {
-				System.out.print(k + " ");
+				String s = String.valueOf(k);
+				char[] z = s.toCharArray();
+				int m=s.length()-1;
+				int i=0;
+					{ 
+					if (z[i] == z[m]) {
+						
+						System.out.println(z);
+					}
+				}
 			}
 		}
-		System.out.println();
 	}
 }
