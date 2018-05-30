@@ -26,7 +26,6 @@ public class PrimeAnagram {
 				return false;
 		}
 
-		@SuppressWarnings({ "rawtypes", "static-access" })
 		public static void main(String[] args) {
 			LinkedList[][] array = new LinkedList[10][];
 			for (int i = 0; i < 10; i++) {
@@ -41,12 +40,14 @@ public class PrimeAnagram {
 					if (isPrime(j)) {
 						for (int m = j + 1; m < 100 * (i + 1); m++) {
 							if (Utility.anag(("" + j), ("" + m)) == true) {
-								array[i][k++].add(j);
+								if(isPrime(m))
+								{
+								array[i][k++].push(j);//add for stack implimentation
 								System.out.println("[" + j + "," + m + "]");
 
 							}
 						}
-					}
+						}					}
 				}
 
 				System.out.println();
