@@ -26,17 +26,20 @@ public class PrimeNumberRange {
 	public static void main(String args[]) throws IOException {
 		PrimeNumberRange ob = new PrimeNumberRange();
 		Utility u = new Utility();
+		System.out.print("Enter the starting range: ");
+		int d = u.inputInteger();
+		System.out.print("Enter the ending range: ");
+		int g = u.inputInteger();
 		System.out.print("Enter the number of rows: ");
 		int m = u.inputInteger();
 		System.out.print("Enter the number of columns: ");
 		int n = u.inputInteger();
-		System.out.print("Enter the ending range: ");
-		int g = u.inputInteger();
+		
 		int A[][] = new int[m][n];
 		int B[] = new int[m * n];
 
 		int i = 0, j;
-		int k = 1;
+		int k = d;
 
 		while (i < m*n) {
 			if (ob.isPrime(k) == true) 
