@@ -7,7 +7,7 @@ import com.bridgelabz.utility.Utility;
 
 /**
  * Created By:Medini P.D
- * Date:- 19/05/2018
+ * Date:- 28/05/2018
  * 
  */
 public class PrimeNumberRange {
@@ -30,15 +30,17 @@ public class PrimeNumberRange {
 		int m = u.inputInteger();
 		System.out.print("Enter the number of columns: ");
 		int n = u.inputInteger();
-
+		System.out.print("Enter the ending range: ");
+		int g = u.inputInteger();
 		int A[][] = new int[m][n];
 		int B[] = new int[m * n];
 
 		int i = 0, j;
 		int k = 1;
 
-		while (i < m * n) {
-			if (ob.isPrime(k) == true) {
+		while (i < m*n) {
+			if (ob.isPrime(k) == true) 
+			{if(k<g)
 				B[i] = k;
 				i++;
 			}

@@ -7,7 +7,7 @@ import java.util.Scanner;
 
 /**
  * Created By:Medini P.D
- * Date:- 19/05/2018
+ * Date:- 28/05/2018
  * Purpose:
  */
  public class Calender{
@@ -83,11 +83,11 @@ import java.util.Scanner;
 	 	    	System.out.println("\n\t                                                     ");
 
 	 	    	System.out.println("\n\t                    JAVA CALENDER                          ");
-	 	        System.out.println("\n\t----------------------------------------------------");
+	 	        System.out.println("\n\t                                               ");
 	 	        System.out.println("\t\t\t      "+mname+" |  "+y); 
-	 	        System.out.println("\t----------------------------------------------------"); 
+	 	        System.out.println("\t                                                        "); 
 	 	        System.out.println("\tSUN\tMON\tTUE\tWED\tTHU\tFRI\tSAT");
-	 	        System.out.println("\t----------------------------------------------------"); 
+	 	        System.out.println("\t                                                    "); 
 	 	         
 	 	        for(int i = 0; i < 5; i++)
 	 	        {
@@ -98,7 +98,7 @@ import java.util.Scanner;
 	 	                else
 	 	                    System.out.print("\t ");
 	 	            }
-	 	            System.out.println("\n\t----------------------------------------------------"); 
+	 	            System.out.println("\n\t                                            "); 
 	 	        }
 	 	    }
 	 	     

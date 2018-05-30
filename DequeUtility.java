@@ -5,7 +5,7 @@ import com.bridgelabz.task.Deque;
 
 /**
  * Created By:Medini P.D 
- * Date:- 19/05/2018 
+ * Date:- 28/05/2018 
  * Purpose:
  */
 public class DequeUtility<E> {
