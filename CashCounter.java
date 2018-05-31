@@ -38,9 +38,8 @@ public class CashCounter
 			   		break;
 		   	case 2:
 			   		System.out.println("Enter the amount you want to Withdraw ");
-					u.inputInteger();
-			   		q.remove();
-			   		System.out.println(" Your Available Balance is: "); 
+			   		int withdraw=u.inputInteger();
+			   		q.remove(u.inputInteger());
 			   		q.display();
 			   		break;
 			case 3:
@@ -53,6 +52,6 @@ public class CashCounter
 			   		break;
 		   	}
 	   	}
-		while(ch<5);
+		while(ch<12);
 	}		
 }	

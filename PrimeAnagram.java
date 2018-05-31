@@ -45,9 +45,10 @@ public class PrimeAnagram {
 								array[i][k++].push(j);//add for stack implimentation
 								System.out.println("[" + j + "," + m + "]");
 
+								}
 							}
 						}
-						}					}
+					}
 				}
 
 				System.out.println();

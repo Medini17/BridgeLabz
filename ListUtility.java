@@ -20,7 +20,7 @@ public class ListUtility {
 	// Reading string from file
 	public Node readFile(Node start) {
 		try {
-			FileInputStream fis = new FileInputStream("/home/bridgelabz/Documents/medini/amd.txt");
+			FileInputStream fis = new FileInputStream("/home/bridgelabz/Documents/medini/mcd.txt");
 			char ch;
 			String word3 = "";
 			while (fis.available() > 0) {
@@ -78,7 +78,7 @@ public class ListUtility {
 	// writeToFile
 	public void writeDataToFile(String nWord) {
 		try {
-			File fi = new File("/home/bridgelabz/Documents/medini/amd.txt");
+			File fi = new File("/home/bridgelabz/Documents/medini/mcd.txt");
 			fi.createNewFile();
 			FileWriter fw = new FileWriter(fi);
 			fw.write(nWord);

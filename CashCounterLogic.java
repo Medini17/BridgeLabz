@@ -11,7 +11,6 @@ import java.util.NoSuchElementException;
 class Node {
 	protected int data;
 	protected Node link;
-
 	public Node() {
 		link = null;
 		data = 0;
@@ -42,11 +41,12 @@ class Node {
 public class CashCounterLogic {
 	public Node front, rear;
 	public int size;
-
+    public int i;
 	public CashCounterLogic() {
 		front = null;
 		rear = null;
 		size = 0;
+		i=0;
 	}
 
 	public boolean isEmpty() {
@@ -58,6 +58,8 @@ public class CashCounterLogic {
 	}
 
 	public void insert(int data) {
+		int data1=0;
+		data1=data1+data;
 		Node node = new Node(data, null);
 		if (rear == null) {
 			front = node;
@@ -69,7 +71,7 @@ public class CashCounterLogic {
 		size++;
 	}
 
-	public int remove() {
+	public int remove(int i) {
 		if (isEmpty()) {
 			throw new NoSuchElementException("Underflow Exception");
 		}
@@ -77,9 +79,9 @@ public class CashCounterLogic {
 		front = ptr.getLink();
 		if (front == null) {
 			rear = null;
-			size--;
+	
 		}
-		return ptr.getData();
+		return  i;
 	}
 
 	public int peek() {
@@ -91,14 +93,15 @@ public class CashCounterLogic {
 
 	public void display() {
 		int ptr1 = 0;
-		System.out.print("Available Balance = ");
 		if (size == 0) {
 			System.out.print("Empty");
 			return;
 		}
 		Node ptr = front;
 		while (ptr != rear.getLink()) {
-			ptr1 = ptr1 + ptr.getData();
+		
+			ptr1 = ptr1+ptr.getData()-i;
+			System.out.print("Available Balance = ");
 			System.out.println(ptr1);
 			ptr = ptr.getLink();
 		}

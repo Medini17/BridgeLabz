@@ -44,7 +44,7 @@ public class UnorderedList {
 
 	public void writeDataToFile(String nWord) {
 		try {
-			File fi = new File("/home/bridgelabz/Documents/medini/amd.txt");
+			File fi = new File("/home/bridgelabz/Documents/medini/mcd.txt");
 			fi.createNewFile();
 			FileWriter fw = new FileWriter(fi);
 			fw.write(nWord);
@@ -56,7 +56,7 @@ public class UnorderedList {
 	public static void main(String[] args) throws IOException {
 		UnorderedList ul = new UnorderedList();
 
-		FileReader fr = new FileReader("/home/bridgelabz/Documents/medini/amd.txt");
+		FileReader fr = new FileReader("/home/bridgelabz/Documents/medini/mcd.txt");
 		int i = 0;
 		while ((i = fr.read()) != -1) {
 			System.out.print((char) i);

@@ -110,8 +110,7 @@ import java.util.Scanner;
 	 	        int y = sc.nextInt();
 	 	        System.out.print("Enter the month name (e.g. January) : ");
 	 	        String mname = sc.next();
-	 	        System.out.print("Enter the week day name (e.g. Sunday) of 1st day of "+mname+" : ");
-	 	        String wname = sc.next();
+	 	        String wname="tuesday";
 	 	         
 	 	        int max = ((Calender) ob).findMaxDay(mname,y);
 	 	        int f = ((Calender) ob).findDayNo(wname);        

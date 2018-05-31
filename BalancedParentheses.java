@@ -14,23 +14,11 @@ public class BalancedParentheses {
 	public static void main(String[] args) 
 	{
 		Utility u=new Utility();
-		System.out.println("Enter max size: ");
-		int n=u.inputInteger();
-	
-
-		/* Creating Stack */
-		StackLogic stack = new StackLogic(n);
-		System.out.println();
-		System.out.println("Parenthesis Matching");
-		System.out.println();
-		 
-
-		/* Accepting expression */
 		System.out.println("Enter expression: ");
-		String exp = u.getString();        
+		String exp = u.getString();    
+		StackLogic stack = new StackLogic(exp.length());
+		System.out.println();
 		int len = exp.length();
-		System.out.println("Matches and Mismatches: ");
-
 		for (int i = 0; i < len; i++)
 		{    
 		char ch = exp.charAt(i);
