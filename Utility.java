@@ -1,6 +1,7 @@
 package com.bridgelabz.utility;
 
 
+import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileReader;
 import java.io.FileWriter;
@@ -16,6 +17,8 @@ import java.util.Scanner;
 import java.util.Stack;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
+
+import com.bridgelabz.task.UserDetails;
 
 public class Utility {
 	Scanner sc = new Scanner(System.in);// do need to mention in every methods
@@ -55,7 +58,7 @@ public class Utility {
 
 	// --------------------------------------------------------------------------------------------
 	// To find the leap year
-	public boolean isLeapYear(int year) {
+	public static  boolean isLeapYear(int year) {
 		if ((year % 4 == 0) && ((year % 100 == 0) && (year % 400 == 0)))
 			return true;
 		else
@@ -64,7 +67,7 @@ public class Utility {
 
 	// -----------------------------------------------------------------------------------------------
 	// To check given two elements are anagram or not
-	public boolean anag(String s1, String s2) {
+	public static boolean anag(String s1, String s2) {
 		char[] s1Array = s1.toCharArray();
 		char[] s2Array = s2.toCharArray();
 
@@ -176,19 +179,19 @@ public class Utility {
 
 	// ------------------------------------------------------------------------------------------
 	// Bubble Sort for Integer
-	public int[] bubbleSort(int a[]) {
+	public Integer[] bubbleSort(Integer[] array2) {
 		int temp;
-		for (int i = 0; i < a.length; i++) {
-			for (int j = 1; j < (a.length - i); j++) {
+		for (int i = 0; i < array2.length; i++) {
+			for (int j = 1; j < (array2.length - i); j++) {
 				// if numbers[j-1] > numbers[j], swap the elements
-				if (a[j - 1] > a[j]) {
-					temp = a[j - 1];
-					a[j - 1] = a[j];
-					a[j] = temp;
+				if (array2[j - 1] > array2[j]) {
+					temp = array2[j - 1];
+					array2[j - 1] = array2[j];
+					array2[j] = temp;
 				}
 			}
 		}
-		return a;
+		return array2;
 	}
 
 	// --------------------------------------------------------------------------------------------
@@ -343,5 +346,48 @@ public class Utility {
 		}
 		return 0;
 
+	
 	}
+	//-----------------------------------
+	//is week 
+	public static int week(int month, int day, int year) {
+		int year0 = year - (14 - month) / 12;
+		int x = year0 + year0 / 4 - year0 / 100 + year0 / 400;
+		int month0 = month + 12 * ((14 - month) / 12) - 2;
+		int day0 = (day + x + 31 * month0 / 12) % 7;
+		return day0;
 }
+	//-----------------
+	//valid date
+	public static boolean validDate(int day, int month, int year) {
+		boolean b = true;
+		if(((month == 4 || month == 6 || month == 9 || month == 11) && (day >30)) 
+				|| (day>31)
+				|| (month==2 && year % 100 == 0 && year % 400 != 0 && day > 28) 
+				|| (month==2 && year % 400 == 0 && day > 29)
+				|| (month==2 && year % 100 != 0 && year % 4 != 0 && day > 28) 
+				|| (month==2 && year % 100 != 0 && year % 4 == 0 && day > 29))
+		{
+			b = false;
+		} 
+        else {
+            b=true;
+        }		
+		return b;
+}
+//----------------------------------------------------
+	//find prime
+	public static boolean findPrime(int number) {
+		if (number == 0 || number == 1) {
+			return false;
+		}
+		for (int i = 2; i <= number / 2; i++) {
+			if (number % i == 0)
+				return false;
+		}
+		return true;
+	}
+
+	
+}
+
