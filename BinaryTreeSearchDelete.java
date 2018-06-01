@@ -59,11 +59,10 @@ public class BinaryTreeSearchDelete {
 	            else if (root.right == null)
 	                return root.left;
 	 
-	            // node with two children: Get the inorder successor (smallest
-	            // in the right subtree)
+	            
 	            root.key = minValue(root.right);
 	 
-	            // Delete the inorder successor
+	           
 	            root.right = deleteRec(root.right, root.key);
 	        }
 	 
