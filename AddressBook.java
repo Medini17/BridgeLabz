@@ -148,7 +148,7 @@ public class AddressBook {
 		JSONParser parser = new JSONParser();
 		JSONArray bookArray = null;
 
-		File file = new File("/home/bridgeit/Documents/addressbook.txt");
+		File file = new File("/home/bridgelabz/Documents/addressbook.json");
 		if (!file.exists()) {
 			try {
 				file.createNewFile();
@@ -158,7 +158,7 @@ public class AddressBook {
 			bookArray = new JSONArray();
 		} else {
 			try {
-				bookArray = (JSONArray) parser.parse(new FileReader("/home/bridgeit/Documents/addressbook.txt"));
+				bookArray = (JSONArray) parser.parse(new FileReader("/home/bridgelabz/Documents/addressbook.json"));
 			} catch (IOException | ParseException e) {
 				e.printStackTrace();
 			}
@@ -176,7 +176,7 @@ public class AddressBook {
 		JSONArray bookArray = null;
 
 		try {
-			bookArray = (JSONArray) parser.parse(new FileReader("/home/bridgelabz/Documents/addressbook.txt"));
+			bookArray = (JSONArray) parser.parse(new FileReader("/home/bridgelabz/Documents/addressbook.json"));
 		} catch (IOException | ParseException e) {
 			((Throwable) e).printStackTrace();
 		}
@@ -207,11 +207,9 @@ public class AddressBook {
 			System.out.println("\nSorry!!! Person not found...");
 		}
 	}
-
-	/** Writes all the data to a file **/
 	void printWriter(JSONArray bookArray) {
 		try {
-			PrintWriter printWriter = new PrintWriter("/home/bridgelabz/Documents/addressbook.txt");
+			PrintWriter printWriter = new PrintWriter("/home/bridgelabz/Documents/addressbook.json");
 			printWriter.write(bookArray.toJSONString());
 			printWriter.close();
 		} catch (FileNotFoundException e) {

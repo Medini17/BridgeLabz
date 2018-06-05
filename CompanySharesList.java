@@ -3,6 +3,7 @@
  */
 package com.bridgelabz.oops;
 
+
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.Scanner;
@@ -10,10 +11,10 @@ import java.util.Scanner;
 /**
  * Created By:Medini P.D
  * Date:- 02/06/2018
- * Purpose:
+ * 
  */
 
-public class CompanyShareList {
+public class CompanySharesList {
 
 	Scanner scanner = new Scanner(System.in);
 	//	list of company shares object
@@ -21,7 +22,7 @@ public class CompanyShareList {
 	
 	public static void main(String[] args) {
 		//object
-		CompanyShareList shareListObject = new CompanyShareList();
+		CompanySharesList shareListObject = new CompanySharesList();
 		shareListObject.start();
 	}
 
