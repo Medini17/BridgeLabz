@@ -3,6 +3,8 @@
  */
 package com.bridgelabz.DataStructure;
 
+import com.bridgelabz.utility.Utility;
+
 /**
  * Created By:Medini P.D
  * Date:- 19/05/2018
@@ -69,15 +71,16 @@ public class BinaryTreeSearch {
 
 	// Driver Program to test above functions
 	public static void main(String[] args) {
+		Utility u=new Utility();
 		BinaryTreeSearch tree = new BinaryTreeSearch();
 
-		tree.insert(50);
-		tree.insert(30);
-		tree.insert(20);
-		tree.insert(40);
-		tree.insert(70);
-		tree.insert(60);
-		tree.insert(80);
+		tree.insert(u.inputInteger());
+		tree.insert(u.inputInteger());
+		tree.insert(u.inputInteger());
+		tree.insert(u.inputInteger());
+		tree.insert(u.inputInteger());
+		tree.insert(u.inputInteger());
+		tree.insert(u.inputInteger());
 		tree.inorder();
 	}
 }

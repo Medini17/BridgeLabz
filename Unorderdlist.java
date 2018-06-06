@@ -33,7 +33,7 @@ public class Unorderdlist {
 	 			br = new BufferedReader(fr);
 	 			word = br.readLine();
 	 			while (word != null) {
-	 				String[] str = word.split(" , ,");
+	 				String[] str = word.split(" ");
 	 				count++;
 	 				for (int i = 0; i < str.length; i++) {
 	 					list.add(str[i]);

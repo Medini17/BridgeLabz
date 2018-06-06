@@ -8,6 +8,7 @@ import java.util.Iterator;
 import java.util.List;
 import java.util.NoSuchElementException;
 
+import com.bridgelabz.oops.StockPortfolio;
 import com.bridgelabz.task.Node;
 
 /**
@@ -27,10 +28,10 @@ import com.bridgelabz.task.Node;
 		}
 
 		/**
-		 * @param string
+		 * @param data1
 		 */
-		public void add(T string) {
-			Node n1 = new Node(string);
+		public void add(T data1) {
+			Node n1 = new Node(data1);
 			if (head == null) {
 				head = n1;
 				size++;
@@ -67,10 +68,6 @@ import com.bridgelabz.task.Node;
 			return temp;
 		}
 
-		/**
-		 * @param data1
-		 * @return
-		 */
 		public int search(T data) {
 			if (head.data.equals(data)) {
 				return 0;
@@ -167,7 +164,7 @@ import com.bridgelabz.task.Node;
 			size++;
 		}
 
-		public T pop() {
+		public T pop(int i) {
 
 			if (isEmpty())
 				throw new NoSuchElementException("Underflow Exception");

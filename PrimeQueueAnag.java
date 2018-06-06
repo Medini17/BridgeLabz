@@ -10,7 +10,7 @@ import com.bridgelabz.utility.Utility;
  * Date:- 19/05/2018
  * Purpose:
  */
-public class PrimeQueue {
+public class PrimeQueueAnag {
 	
 		public static void main(String[] args) {
 			LinkedList[][] array = new LinkedList[100][];
