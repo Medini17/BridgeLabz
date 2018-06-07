@@ -9,7 +9,7 @@ import com.bridgelabz.utility.Utility;
 /**
  * Created By:Medini P.D
  * Date:- 19/05/2018
- * Purpose:
+ * Purpose:To check given prime number is a palindrome or not.
  */
 public class PrimePalindrome {
 	public static boolean isPrime(int i) {
@@ -29,17 +29,26 @@ public class PrimePalindrome {
 		int b = u.inputInteger();
 		for (int k = a; k <= b; k++) {
 			if (isPrime(k)) {
-				String s = String.valueOf(k);
-				char[] z = s.toCharArray();
-				int m=s.length()-1;
-				int i=0;
-					{ 
-					if (z[i] == z[m]) {
+				int res=rev(k);
+			    if(k==res) {
+			    	System.out.println(res);
+			    }
 						
-						System.out.println(z);
-					}
-				}
 			}
 		}
 	}
+
+	public static int rev(int k) {
+		int out=0;
+	
+		while(k!=0)
+		{  int rem=k%10;
+		    out=out*10+rem;
+			k=k/10;
+		}
+		return out;
+	}
 }
+		
+	
+
