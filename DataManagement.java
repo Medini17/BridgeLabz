@@ -5,17 +5,17 @@ package com.bridgelabz.oops;
 
 import java.io.FileReader;
 import java.io.IOException;
+import java.text.ParseException;
+import java.util.Iterator;
+
 import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
 import org.json.simple.parser.JSONParser;
-import org.json.simple.parser.ParseException;
 
 /**
- * Created By:Medini P.D 
- * Date:- 02/06/2018 
- * Purpose: Create   a   JSON   file   having   Inventory   Details   for   Rice,   Pulses   and  
- * Wheats with   properties   name,   weight,   price   per   kg.  And calculating the value of 
- * each inventory.
+ * Created By:Medini P.D
+ * Date:- 02/06/2018
+ * Purpose:
  */
 
 public class DataManagement {
@@ -30,14 +30,14 @@ public class DataManagement {
 	public static void main(String[] args) {
 		JSONParser parser = new JSONParser();
 		try {
-			Object obj = parser.parse(new FileReader("/home/bridgelabz/Documents/datamanagement.jason"));
+			Object obj = parser.parse(new FileReader("/home/bridgelabz/Documents/datamanagement.json"));
 			JSONObject jsonObject = (JSONObject) obj;
 			JSONArray rice = (JSONArray) jsonObject.get("Rice");
 			for (int i = 0; i < rice.size(); i++) {
 				JSONObject objrice = (JSONObject) (rice.get(i));
-				rice_sum += (Integer.parseInt(objrice.get("Weight in KG").toString()))
-						* (Integer.parseInt(objrice.get("Price per KG").toString()));
-				rice_total += (Integer.parseInt(objrice.get("Weight in KG").toString()));
+				rice_sum += (Integer.parseInt(objrice.get("weight").toString()))
+						* (Integer.parseInt(objrice.get("price").toString()));
+				rice_total += (Integer.parseInt(objrice.get("weight").toString()));
 			}
 			System.out.println(rice);
 			System.out.println(rice_sum);
@@ -46,9 +46,9 @@ public class DataManagement {
 			JSONArray wheat = (JSONArray) jsonObject.get("Wheat");
 			for (int i = 0; i < wheat.size(); i++) {
 				JSONObject objwheat = (JSONObject) (wheat.get(i));
-				wheat_sum += (Integer.parseInt(objwheat.get("Weight in KG").toString()))
-						* (Integer.parseInt(objwheat.get("Price per KG").toString()));
-				wheat_total += (Integer.parseInt(objwheat.get("Weight in KG").toString()));
+				wheat_sum += (Integer.parseInt(objwheat.get("weight").toString()))
+						* (Integer.parseInt(objwheat.get("price").toString()));
+				wheat_total += (Integer.parseInt(objwheat.get("weight").toString()));
 			}
 			System.out.println(wheat);
 			System.out.println(wheat_sum);
@@ -56,17 +56,27 @@ public class DataManagement {
 			JSONArray Pulses = (JSONArray) jsonObject.get("Pulses");
 			for (int i = 0; i < Pulses.size(); i++) {
 				JSONObject objpulse = (JSONObject) (Pulses.get(i));
-				pulses_sum += (Integer.parseInt(objpulse.get("Weight in KG").toString()))
-						* (Integer.parseInt(objpulse.get("Price per KG").toString()));
-				pulses_total += (Integer.parseInt(objpulse.get("Weight in KG").toString()));
+				pulses_sum += (Integer.parseInt(objpulse.get("weight").toString()))
+						* (Integer.parseInt(objpulse.get("price").toString()));
+				pulses_total += (Integer.parseInt(objpulse.get("weight").toString()));
 			}
 			System.out.println(Pulses);
 			System.out.println(pulses_sum);
 			System.out.println(pulses_total);
 
-		} catch (IOException | ParseException e) {
+		} catch (IOException | org.json.simple.parser.ParseException e) {
 			e.printStackTrace();
 		}
+	}long getValue(JSONArray array){
+		Iterator<?> iterator = array.iterator();	//	iterator to iterate
+		long value = 0;	//	inventory value
+		while(iterator.hasNext()) {
+			JSONObject obj = (JSONObject)iterator.next();
+			long weight = (long)obj.get("weight");
+			long price = (long)obj.get("price");
+			value = value + weight * price;	//	adding value
+		}
+		return value;
 	}
 
 }
