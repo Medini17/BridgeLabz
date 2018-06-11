@@ -1,6 +1,3 @@
-/**
- * 
- */
 package com.bridgelabz.oops;
 
 import java.util.ArrayList;
@@ -12,7 +9,7 @@ import com.bridgelabz.utility.Utility;
 /**
  * Created By:Medini P.D
  * Date:- 02/06/2018
- * 
+ *
  */
 
 public class Clinique 
@@ -24,10 +21,10 @@ public class Clinique
 		Utility u=new Utility();
 		Find f=new Find();
 		HashMap<Appointment,Integer> appoint=new HashMap<Appointment,Integer>();
-		Patients p=new Patients();
+		Patient p=new Patient();
 		Doctor d=new Doctor();
 		ArrayList<Doctor> ald = new ArrayList<Doctor>();
-		ArrayList<Patients> alp = new ArrayList<Patients>();
+		ArrayList<Patient> alp = new ArrayList<Patient>();
 		int c=0;
 		
 		do

@@ -1,20 +1,11 @@
-/**
- * 
- */
 package com.bridgelabz.oops;
-
-/**
- * Created By:Medini P.D
- * Date:- 02/06/2018
- * Purpose:
- */
 
 public class CompanyShares {
 
-	private String symbol;	//symbol of the stock
-	private int numberOfShares;	//share count
-	private String dateTime;	//date
-	private int price;	//price
+	private String symbol;	
+	private int numberOfShares;	
+	private String dateTime;
+	private int price;	
 	
 	/** Constructor **/
 	public CompanyShares(String symbol , int numberOfShares, int price, String dateTime) {
@@ -52,3 +43,4 @@ public class CompanyShares {
 		this.dateTime = dateTime;
 	}
 }
+

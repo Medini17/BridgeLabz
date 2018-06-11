@@ -47,7 +47,7 @@ public class Find
 		
 		for(Doctor d:al)
 		{
-			if(d.getAvail()==as)
+			if(d.getAvail1()==as)
 			{
 				temp.add(d);
 			}
@@ -55,11 +55,11 @@ public class Find
 			return temp;	
 	}
 
-	public ArrayList<Patients> FindById1 (ArrayList<Patients> al1, int fdid1)  //search patients by id
+	public ArrayList<Patient> FindById1 (ArrayList<Patient> al1, int fdid1)  //search patients by id
 	{
-		ArrayList<Patients> temp=new ArrayList<Patients>();
+		ArrayList<Patient> temp=new ArrayList<Patient>();
 
-		for(Patients p1:al1)
+		for(Patient p1:al1)
 		{
 			if(p1.getPid()==fdid1)
 			{
@@ -69,11 +69,11 @@ public class Find
 		return temp;
 	}
 
-	public ArrayList<Patients> FindByName1 (ArrayList<Patients> al1, String dn1)  //search patients by name
+	public ArrayList<Patient> FindByName1 (ArrayList<Patient> al1, String dn1)  //search patients by name
 	{
-		ArrayList<Patients> temp=new ArrayList<Patients>();
+		ArrayList<Patient> temp=new ArrayList<Patient>();
 		
-		for(Patients p1:al1)
+		for(Patient p1:al1)
 		{
 			if(p1.getPname()==dn1)
 			{
@@ -83,11 +83,11 @@ public class Find
 		return temp;
 	}
 
-	public ArrayList<Patients> FindByava1 (ArrayList<Patients> al1, String as1)   //search patients by availability
+	public ArrayList<Patient> FindByava1 (ArrayList<Patient> al1, String as1)   //search patients by availability
 	{	
-		ArrayList<Patients> temp=new ArrayList<Patients>();
+		ArrayList<Patient> temp=new ArrayList<Patient>();
 		
-		for(Patients p1:al1)
+		for(Patient p1:al1)
 		{
 			if(p1.getMobile()==as1)
 			{

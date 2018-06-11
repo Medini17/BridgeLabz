@@ -1,6 +1,3 @@
-/**
- * 
- */
 package com.bridgelabz.oops;
 
 import com.bridgelabz.utility.Utility;
@@ -36,7 +33,7 @@ public class Doctor
 	{
 		this.dname = dname;
 	}
-	public String getAvail() 
+	public String getAvail1() 
 	{
 		return avail;
 	}
@@ -77,5 +74,6 @@ public class Doctor
 		System.out.println("Enter Availability (1:AM   2:PM  3:Both) :");
 		this.avail=u1.getString();
 		System.out.println();
+	
 	}
 }

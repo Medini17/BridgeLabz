@@ -1,31 +1,28 @@
+/**
+ * 
+ */
 package com.bridgelabz.oops;
+
 import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.util.Iterator;
 import java.util.Scanner;
-
+import com.bridgelabz.oops.*;
 import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
 import org.json.simple.parser.JSONParser;
 
-public class JSONInventory {
+/**
+ * Created By:Medini P.D
+ * Date:- 02/06/2018
+ * Purpose:
+ */
+public class JsonInventory {
 
-	public static void main(String[] args) {
-
-		JSONInventory inventory = new JSONInventory();	//	class object
-		//	get data from user and write to the file
-		inventory.writeData();	
-		//	read data from the file and calculate the inventory
-		inventory.readData();	
-		
-	}
+	InventoryManager invent=new InventoryManager();
 	
-	
-	/**
-	 * Takes user input and writes data to json objcet and object to file
-	 */
 	void writeData() {
 		Scanner scanner = new Scanner(System.in);	//	scanner to get user input
 		String[] names = new String[] {"Rice" , "Wheat" , "Pulses"};	//	inventory array
@@ -63,6 +60,8 @@ public class JSONInventory {
 	 * prints inventory value of Rice, Pulses and Wheat
 	 */
 	void readData() {
+		InventoryManager invent=new InventoryManager();
+
 		JSONArray array = new JSONArray();	//	array to get json data from file
 		JSONParser parser = new JSONParser();	//	parser to parse data from file
 		JSONObject object;	// json object to store every type of inventory
@@ -84,20 +83,23 @@ public class JSONInventory {
 			e.printStackTrace();
 		}
 	}
-	
+
 	/**
-	 * @param array - json array
-	 * @returns value of given inventory array
+	 * @param array
+	 * @return
 	 */
-	long getValue(JSONArray array){
-		Iterator<?> iterator = array.iterator();	//	iterator to iterate
-		long value = 0;	//	inventory value
-		while(iterator.hasNext()) {
-			JSONObject obj = (JSONObject)iterator.next();
-			long weight = (long)obj.get("weight");
-			long price = (long)obj.get("price");
-			value = value + weight * price;	//	adding value
+		long getValue(JSONArray array){
+			Iterator<?> iterator = array.iterator();	//	iterator to iterate
+			long value = 0;	//	inventory value
+			while(iterator.hasNext()) {
+				JSONObject obj = (JSONObject)iterator.next();
+				long weight = (long)obj.get("weight");
+				long price = (long)obj.get("price");
+				value = value + weight * price;	//	adding value
+			}
+			return value;
 		}
-		return value;
 	}
-}
+
+	
+

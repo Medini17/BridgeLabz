@@ -11,7 +11,7 @@ import com.bridgelabz.utility.Utility;
  * 
  */
 
-public class Patients
+public class Patient
 {
 	int pid;
 	String pname;

@@ -5,7 +5,6 @@ package com.bridgelabz.oops;
 
 import java.io.FileReader;
 import java.io.IOException;
-import java.text.ParseException;
 import java.util.Iterator;
 
 import org.json.simple.JSONArray;
@@ -40,8 +39,9 @@ public class DataManagement {
 				rice_total += (Integer.parseInt(objrice.get("weight").toString()));
 			}
 			System.out.println(rice);
-			System.out.println(rice_sum);
-			System.out.println(rice_total);
+			System.out.println("total price of the rice = " +rice_sum);
+			System.out.println("total weight of the rice = "+rice_total);
+			System.out.println();
 			
 			JSONArray wheat = (JSONArray) jsonObject.get("Wheat");
 			for (int i = 0; i < wheat.size(); i++) {
@@ -49,10 +49,12 @@ public class DataManagement {
 				wheat_sum += (Integer.parseInt(objwheat.get("weight").toString()))
 						* (Integer.parseInt(objwheat.get("price").toString()));
 				wheat_total += (Integer.parseInt(objwheat.get("weight").toString()));
+				
 			}
 			System.out.println(wheat);
-			System.out.println(wheat_sum);
-			System.out.println(wheat_total);
+			System.out.println("total price of the wheat = " +wheat_sum);
+			System.out.println("total weight of the rice = " +wheat_total);
+			System.out.println();
 			JSONArray Pulses = (JSONArray) jsonObject.get("Pulses");
 			for (int i = 0; i < Pulses.size(); i++) {
 				JSONObject objpulse = (JSONObject) (Pulses.get(i));
@@ -61,8 +63,9 @@ public class DataManagement {
 				pulses_total += (Integer.parseInt(objpulse.get("weight").toString()));
 			}
 			System.out.println(Pulses);
-			System.out.println(pulses_sum);
-			System.out.println(pulses_total);
+			System.out.println("total price of the pulses =" +pulses_sum);
+			System.out.println("total weight of the pulses =" +pulses_total);
+			System.out.println();
 
 		} catch (IOException | org.json.simple.parser.ParseException e) {
 			e.printStackTrace();

@@ -1,6 +1,4 @@
-/**
- * 
- */
+
 package com.bridgelabz.oops;
 
 
@@ -17,25 +15,25 @@ import java.util.Scanner;
 public class CompanySharesList {
 
 	Scanner scanner = new Scanner(System.in);
-	//	list of company shares object
 	MyLinkedList<CompanyShares> list = new MyLinkedList<CompanyShares>();
 	
 	public static void main(String[] args) {
-		//object
 		CompanySharesList shareListObject = new CompanySharesList();
 		shareListObject.start();
 	}
 
-	/**	asks user if wants to add or remove stocks **/
 	void start() { 
-		System.out.print("Type 'add' to add the stock and 'remove' to remove the stock: ");
+		System.out.println("enter your input");
+		System.out.print("1. Adding shares to the company ");
+		System.out.println();
+		System.out.print("2. removing shares to the company ");
 		String move = scanner.next();
 		
-		if(move.equals("add")) {
+		if(move.equals("1")) {
 			add();
-			start();
+		
 		}
-		else if(move.equals("remove")) {
+		else if(move.equals("2")) {
 			remove();
 			start();
 		}
@@ -45,18 +43,19 @@ public class CompanySharesList {
 			return;
 		}
 	}
-	/** Adds stock to the list **/
 	void add() {
 		String dateTime = new SimpleDateFormat("dd/MM/yyyy").format(new Date());
 		System.out.print("Enter stock symbol, number of shares and share price: ");
 		String symbol = scanner.next();
 		int numberOfShares = scanner.nextInt();
 		int price = scanner.nextInt();
-		CompanyShares stock = new CompanyShares(symbol, numberOfShares, price, dateTime);
+		CompanyShares stock = new CompanyShares(symbol, price, price, symbol);
 		list.add(stock);
+		System.out.println("\nadded Succesfully...");
+		print();
+		start();
 	}
 	
-	/** removes stock from the list**/
 	void remove() {
 		scanner = new Scanner(System.in);
 		System.out.print("Enter stock symbol: ");
@@ -67,14 +66,13 @@ public class CompanySharesList {
 				list.remove(shareObject);
 				System.out.println("\nRemoved Succesfully...");
 				print();
-				break;
+				start();
 			}
 		}
 	}
 	
-	/** prints stocks list **/
 	void print() {
-		System.out.println("\nSymbol\tShares\tPrice");
+		System.out.println("\nsymbol\tShares\tprice");
 		for(int i = 0; i < list.size(); i++) {
 			CompanyShares shareObject = list.get(i);			
 			System.out.println(shareObject.getSymbol()+"\t"

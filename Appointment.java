@@ -20,6 +20,7 @@ public class Appointment {
 		this.did=did;
 		this.date=date;
 	}
+
 	//getter and setter methods
 	public int getDid() 
 	{
