@@ -21,7 +21,7 @@ public class NodeUtility
 	{
 		try
 		{
-			FileInputStream fis = new FileInputStream("integer.txt");
+			FileInputStream fis = new FileInputStream("/home/bridgelabz/Documents/medini/integer.txt");
 			char ch;
 			String word3="";
 

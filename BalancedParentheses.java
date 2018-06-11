@@ -19,15 +19,15 @@ public class BalancedParentheses {
 		StackLogic stack = new StackLogic(exp.length());
 		System.out.println();
 		int len = exp.length();
-		for (int i = 0; i < len; i++)
+		for (int i =0; i < len; i++)
 		{    
 		char ch = exp.charAt(i);
 
-			if (ch == '(')
+			if (ch =='(' )
 			{
 			stack.push(i);
 			}
-				else if (ch == ')')
+				else if (ch ==')')
 				{
 					try
 					{
