@@ -10,7 +10,7 @@ import com.bridgelabz.utility.Utility;
 /**
  * Created By:Medini P.D 
  * Date:- 02/06/2018 
- * Purpose:
+ * Purpose:To Create   Object   Oriented   Analysis   and   Design   of   a   simple address book problem
  */
 public class AddressBookJava {
 	static Utility u = new Utility();

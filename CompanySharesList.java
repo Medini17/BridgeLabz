@@ -9,7 +9,9 @@ import java.util.Scanner;
 /**
  * Created By:Medini P.D
  * Date:- 02/06/2018
- * 
+ * Purpose: List   of   CompanyShares   in   a   Linked   List   So   new   CompanyShares   can  be   
+ * added   or   removed   easily.   Do   not   use   any   Collection   Library   to   implement   Linked  
+ * List. 
  */
 
 public class CompanySharesList {

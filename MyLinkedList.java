@@ -6,7 +6,7 @@ package com.bridgelabz.oops;
 /**
  * Created By:Medini P.D
  * Date:- 02/06/2018
- * Purpose:
+ * Purpose:Method implementation in linked list
  */
 
 public class MyLinkedList<T>{

@@ -9,7 +9,7 @@ import com.bridgelabz.utility.Utility;
 /**
  * Created By:Medini P.D
  * Date:- 02/06/2018
- *
+ * Purpose: Program to implement the working of clinique Management.
  */
 
 public class Clinique 

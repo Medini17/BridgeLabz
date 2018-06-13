@@ -14,7 +14,8 @@ import org.json.simple.parser.JSONParser;
 /**
  * Created By:Medini P.D
  * Date:- 02/06/2018
- * Purpose:
+ * Purpose:To Create   a   JSON   file   having   Inventory   Details   for   Rice,   Pulses   and   Wheats 
+ * with   properties   name,   weight,   price   per   kg.
  */
 
 public class DataManagement {

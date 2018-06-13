@@ -8,7 +8,7 @@ import java.util.Date;
 /**
  * Created By:Medini P.D
  * Date:- 02/06/2018
- * Purpose:
+ * 
  */
 public class Appointment {
  
