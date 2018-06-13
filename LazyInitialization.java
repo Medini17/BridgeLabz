@@ -8,7 +8,7 @@ import java.time.Instant;
 /**
  * Created By:Medini P.D
  * Date:- 12/06/2018
- * Purpose:
+ * Purpose:Singleton object creation using LazyInitialization
  */
 public class LazyInitialization {
 

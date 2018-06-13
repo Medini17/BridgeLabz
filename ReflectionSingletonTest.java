@@ -8,7 +8,7 @@ import java.lang.reflect.Constructor;
 /**
  * Created By:Medini P.D
  * Date:- 12/06/2018
- * Purpose:
+ * Purpose: Singleton object destroction using reflection singleton.
  */
 public class ReflectionSingletonTest {
 

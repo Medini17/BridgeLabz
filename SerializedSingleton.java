@@ -8,7 +8,7 @@ import java.io.Serializable;
 /**
  * Created By:Medini P.D
  * Date:- 12/06/2018
- * Purpose:
+ * Purpose:Handling singleton object using Serialization
  */
 
 public class SerializedSingleton implements Serializable{

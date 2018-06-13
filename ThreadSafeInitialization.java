@@ -6,7 +6,7 @@ package com.bridgelabz.SingletonDesignPattern;
 /**
  * Created By:Medini P.D
  * Date:- 12/06/2018
- * Purpose:
+ * Purpose:Singleton object creation using ThreadSafeInitialization.
  */
 public class ThreadSafeInitialization {
 
