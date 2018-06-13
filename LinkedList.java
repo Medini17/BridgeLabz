@@ -14,7 +14,7 @@ import com.bridgelabz.task.Node;
 /**
  * Created By:Medini P.D
  * Date:- 19/05/2018
- * Purpose:
+ * 
  */
 	public class LinkedList<T extends Comparable<T>> {
 		

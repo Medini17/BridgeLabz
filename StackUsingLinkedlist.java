@@ -11,7 +11,7 @@ import com.bridgelabz.task.Node;
 /**
  * Created By:Medini P.D
  * Date:- 19/05/2018
- * Purpose:
+ * Purpose: Method implementation of stack using linkedlist
  */
 
 	public class StackUsingLinkedlist<T> {

@@ -8,7 +8,7 @@ import com.bridgelabz.utility.Utility;
 /**
  * Created By:Medini P.D
  * Date:- 19/05/2018
- * Purpose:
+ * Purpose: To delete the element using binarySearch.
  */
 public class BinaryTreeSearchDelete {
 	  

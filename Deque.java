@@ -6,7 +6,7 @@ package com.bridgelabz.DataStructure;
 /**
  * Created By:Medini P.D
  * Date:- 19/05/2018
- * Purpose:
+ * 
  */
 	public class Deque<T extends Comparable<T>> {
 		private class Node {

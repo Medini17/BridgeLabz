@@ -3,17 +3,19 @@
  */
 package com.bridgelabz.DataStructure;
 
+import com.bridgelabz.utility.Utility;
+
 /**
  * Created By:Medini P.D
  * Date:- 02/06/2018
- * Purpose:
+ * Purpose:To check the given expression is valid or not by checking its parenthesis.
  */
 public class BalancedParenthesesNew {
-
+  static Utility u=new Utility();
 	static class stack 
 	{
 		int top=-1;
-		char items[] = new char[100];
+		char items[] = new char[99];
 
 		void push(char x) 
 		{
@@ -87,7 +89,7 @@ public class BalancedParenthesesNew {
 				
 			/* If we see an ending parenthesis without 
 				a pair then return false*/
-			if (st.isEmpty())
+			if (st.isEmpty())    
 			{
 				return false;
 			} 
@@ -119,8 +121,10 @@ public class BalancedParenthesesNew {
 	/* UTILITY FUNCTIONS */
 	/*driver program to test above functions*/
 	public static void main(String[] args) 
-	{
-		char exp[] = {'{','(',')','}','[',']'};
+	{ 
+		String str=u.getString();
+	    int length=str.length(); 
+		char exp[] =str.toCharArray();
 		if (areParenthesisBalanced(exp))
 			System.out.println("Balanced ");
 		else

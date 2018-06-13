@@ -6,7 +6,7 @@ package com.bridgelabz.DataStructure;
 /**
  * Created By:Medini P.D
  * Date:- 24/05/2018
- * Purpose:
+ * Purpose: Method implementations in stack.
  */
 public class StackLogic {
 

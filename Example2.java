@@ -6,7 +6,7 @@ package com.bridgelabz.DataStructure;
 /**
  * Created By:Medini P.D
  * Date:- 30/05/2018
- * Purpose:
+ * Purpose: Object creation example
  */
 
 interface Drawable {

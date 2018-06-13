@@ -8,7 +8,7 @@ import com.bridgelabz.utility.Utility;
 /**
  * Created By:Medini P.D
  * Date:- 19/05/2018
- * Purpose:
+ * Purpose:To find the prime anagrams using queue
  */
 public class PrimeQueueAnag {
 	

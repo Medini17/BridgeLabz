@@ -9,7 +9,7 @@ import com.bridgelabz.utility.Utility;
 /**
  * Created By:Medini P.D
  * Date:- 28/05/2018
- * Purpose:
+ * Purpose: Program to find the given string is palindrome or not.
  */
 public class PalindromeChecker {
 	public static void main(String[] args) {

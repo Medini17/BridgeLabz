@@ -6,7 +6,7 @@ package com.bridgelabz.DataStructure;
 /**
  * Created By:Medini P.D
  * Date:- 28/05/2018
- * Purpose:
+ * Purpose: Program to show the function of hashing
  */
 public class HashingFunction {
 

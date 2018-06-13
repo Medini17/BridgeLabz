@@ -3,7 +3,14 @@ package com.bridgelabz.DataStructure;
 import com.bridgelabz.task2.Node;
 import com.bridgelabz.utility.Utility;
 
-// Creating the class
+/**
+ * Created By:Medini P.D
+ * Date:- 19/05/2018
+ * Purpose:Read   .a   List   of   Numbers   from   a   file   and   arrange   it   ascending   Order
+ * in   a Linked   List.   Take   user   input   for   a   number,   if   found   then   pop   the   number   out   of
+ * the list   else   insert   the   number   in   appropriate   position 
+ */
+	
 public class OrderedList
 {
     Node start;

@@ -10,7 +10,7 @@ import com.bridgelabz.utility.Utility;
 /**
  * Created By:Medini P.D
  * Date:- 28/05/2018
- * Purpose:
+ * Purpose:Program to print the calender pattern.
  */
 public class Calender {
 	static int MONTH = 0, YEAR = 0;

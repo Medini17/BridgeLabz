@@ -10,7 +10,7 @@ import com.bridgelabz.utility.Utility;
 /**
  * Created By:Medini P.D
  * Date:- 19/05/2018
- * Purpose:
+ * Purpose: Program to find the prime numbers which are anagrams
  */
 public class PrimeAnagram {
 	public static void main(String[] args) {
