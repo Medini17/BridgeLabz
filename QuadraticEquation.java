@@ -28,8 +28,8 @@ public class QuadraticEquation {
 		System.out.println("enter the value for b:");
 		int b = u.inputInteger();
 		System.out.println("enter the value for c:");
-
 		int c = u.inputInteger();
+
 		double res = del(a, b, c);
 
 	}

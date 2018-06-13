@@ -15,6 +15,5 @@ public class PowerOf2 {
 		System.out.println("Enter a number:");
 		int n1 = u.inputInteger();
 		int res = u.power(n1);
-		System.out.println(res);
 	}
 }
