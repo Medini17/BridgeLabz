@@ -1,0 +1,16 @@
+[
+	{
+		"symbol": "fjc",
+		"numberOfShares": 52,
+		"dateTime": null,
+		"price": 525.0,
+		"value": 27300.0
+	},
+	{
+		"symbol": "th",
+		"numberOfShares": 5552,
+		"dateTime": null,
+		"price": 555.0,
+		"value": 3081360.0
+	}
+]

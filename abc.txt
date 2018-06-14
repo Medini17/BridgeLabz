@@ -1,0 +1,1 @@
+{"price":"30","weight":"34kg","Name1":"pulses","weight1":"38kg","price1":"20","Name":"rice"}
