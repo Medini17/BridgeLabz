@@ -26,22 +26,20 @@ public class PrototypePatternTest {
 		Employees empsNew = (Employees) emps.clone();
 		Employees empsNew1 = (Employees) emps.clone();
 		List<String> list = empsNew.getEmpList();
-		System.out.println("enter the no.of names to add to a group");
-		int n=u.inputInteger();
-		for(int i=0;i<n;i++)
-		{
+		System.out.println("enter the names to add to a group");
 		list.add(u.getString());
-		}
+		list.add(u.getString());
+		list.add(u.getString());
+		list.add(u.getString());
+
 		System.out.println();
 		List<String> list1 = empsNew1.getEmpList();
-		System.out.println("enter the no.of names to remove from a group");
-		int m=u.inputInteger();
-		for(int j=0;j<m;j++)
-		{
-		list.remove(u.getString());
-		}
+		System.out.println("enter the names to remove from a group");
+		
+		list1.remove(u.getString());
+		
 		System.out.println("emps List: "+emps.getEmpList());
-		System.out.println("empsNew List: "+list);
+		System.out.println("removed List: "+list1);
 		System.out.println("empsNew List: "+list);
 	}
 

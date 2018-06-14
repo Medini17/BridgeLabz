@@ -1,0 +1,35 @@
+/**
+ * 
+ */
+package com.bridgelabz.DesignPatterns;
+
+/**
+ * Created By:Medini P.D
+ * Date:- 12/06/2018
+ * Purpose:
+ */
+
+
+public class Book implements ItemElement {
+
+	private int price;
+	private String isbnNumber;
+	
+	public Book(int cost, String isbn){
+		this.price=cost;
+		this.isbnNumber=isbn;
+	}
+	
+	public int getPrice() {
+		return price;
+	}
+
+	public String getIsbnNumber() {
+		return isbnNumber;
+	}
+
+	@Override
+	public int accept(ShoppingCartVisitor visitor) {
+		return visitor.visit(this);
+	}
+}

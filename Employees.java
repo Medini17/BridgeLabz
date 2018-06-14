@@ -22,19 +22,18 @@ public class Employees implements Cloneable{
 		empList = new ArrayList<String>();
 	}
 	
-	public Employees(List<String> list){
-		this.empList=list;
+	public Employees(List<String> list1){
+		this.empList=list1;
 	}
 	public void loadData(){
 		//read all employees from database and put into the list
-		System.out.println("enter the number of persons to add a group");
-		int n=u.inputInteger();
 		System.out.println("enter the names");
-		for(int i=0;i<n;i++)
-		{
 		empList.add(u.getString());
+		empList.add(u.getString());
+		empList.add(u.getString());
+		empList.add(u.getString());
+
 		System.out.println();
-		}
 	}
 	
 	public List<String> getEmpList() {

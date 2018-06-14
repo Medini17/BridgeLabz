@@ -3,29 +3,22 @@
  */
 package com.bridgelabz.DesignPatterns;
 
-import java.util.Observer;
-
 /**
  * Created By:Medini P.D
  * Date:- 12/06/2018
- * 
+ * Purpose:
  */
+
 public interface Subject {
 
-	public static void register(Observer obj)
-	{
-		
-	}
-	public static void unregister(Observer obj)
-	{
-		
-	}
-	public static void notifyObservers( )
-	{
-		
-	}
-   public static void getUpdate(Observer obj)
-   {
-	   
-   }
+	//methods to register and unregister observers
+	public void register(Observer obj);
+	public void unregister(Observer obj);
+	
+	//method to notify observers of change
+	public void notifyObservers();
+	
+	//method to get updates from subject
+	public Object getUpdate(Observer obj);
+	
 }
