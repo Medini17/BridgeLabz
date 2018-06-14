@@ -47,7 +47,7 @@ public class Find
 		
 		for(Doctor d:al)
 		{
-			if(d.getAvail1()==as)
+			if(d.getAvail()==as)
 			{
 				temp.add(d);
 			}

@@ -79,6 +79,8 @@ public class Patient
 		this.age=u1.inputInteger();
 		System.out.println();
 
+		System.out.println("**");
+		this.mobile=u1.getString();
 		System.out.println("Enter Mobile Number: ");
 		this.mobile=u1.getString();
 		System.out.println();

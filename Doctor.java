@@ -33,7 +33,7 @@ public class Doctor
 	{
 		this.dname = dname;
 	}
-	public String getAvail1() 
+	public String getAvail() 
 	{
 		return avail;
 	}
@@ -66,7 +66,9 @@ public class Doctor
 		System.out.println("Enter Id: ");
 		this.did=u1.inputInteger();
 		System.out.println();
-
+     
+		System.out.println("**");
+		this.spec=u1.getString();
 		System.out.println("Enter Specialization: ");
 		this.spec=u1.getString();
 		System.out.println();

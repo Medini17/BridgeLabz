@@ -94,9 +94,9 @@ public class AddressBookJava {
 					address = s.next();
 					System.out.print("state? ");
 					state = s.next();
-					System.out.print("city");
+					System.out.print("city?");
 					city = s.next();
-					System.out.print("zip code");
+					System.out.print("zip code?");
 					zipcode = s.next();
 					library[selectedBook].add(first, last, address, zipcode, state, city);
 					break;

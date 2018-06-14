@@ -174,7 +174,7 @@ public class Clinique
 					do
 					{
 						System.out.println();
-						System.out.println("----------Search Patients---------");
+						System.out.println("--Search Patients--");
 						System.out.println();
 						System.out.println("1.Search Patients By Id");
 						System.out.println("2.Search Patients By Name");

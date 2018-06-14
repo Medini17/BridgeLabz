@@ -9,9 +9,7 @@ import java.util.Random;
  * Created By:Medini P.D
  * Date:- 02/06/2018
  * Purpose:Player   Object   having   Deck   of   Cards,   and  having   ability   to   Sort   by   Rank
- * and   maintain   the   cards   in   a   Queue   implemented   using  Linked   List.   Do   not   use   
- * any   Collection   Library.   Further   the   Player   are   also   arranged  in   Queue.   Finally   
- * Print   the   Player   and   the   Cards   received   by   each   Player
+ * and   maintain   the   cards   in   a   Queue   implemented   using  Linked   List.  
  */
 public class DeckofCardsExtention {
 
@@ -20,7 +18,7 @@ public class DeckofCardsExtention {
 	public static void main(String[] args) {
 		
 		DeckofCardsExtention extended = new DeckofCardsExtention();	//	class object
-		extended.start();	//	starts queueing
+		extended.start();	//	starts queuing
 		extended.dequeuePlayers();	//	dequeues players
 	}
 	
