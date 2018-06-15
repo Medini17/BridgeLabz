@@ -3,86 +3,40 @@
  */
 package com.bridgelabz.oops;
 
-import com.bridgelabz.utility.Utility;
-
 /**
  * Created By:Medini P.D
- * Date:- 02/06/2018
- * 
+ * Date:- 12/06/2018
+ * Purpose:
  */
 
-public class Patient
-{
-	int pid;
-	String pname;
-	int age;
-	String mobile;
-
-	//getter and setter methods
-	public int getPid() 
-	{
-		return pid;
+public class Patient {
+	private String patientname;
+	private String patientid;
+	private String mobilenum;
+	private int age;
+	public String getPatientname() {
+		return patientname;
 	}
-	public void setPid(int pid) 
-	{
-		this.pid = pid;
+	public void setPatientname(String patientname) {
+		this.patientname = patientname;
 	}
-
-	public String getPname() 
-	{
-		return pname;
+	public String getPatientid() {
+		return patientid;
 	}
-	public void setPname(String pname) 
-	{
-		this.pname = pname;
+	public void setPatientid(String patientid) {
+		this.patientid = patientid;
 	}
-
-	public int getAge() 
-	{
+	public String getMobilenum() {
+		return mobilenum;
+	}
+	public void setMobilenum(String mobilenum) {
+		this.mobilenum = mobilenum;
+	}
+	public int getAge() {
 		return age;
 	}
-	public void setAge(int age) 
-	{
+	public void setAge(int age) {
 		this.age = age;
 	}
 
-	public String getMobile() 
-	{
-		return mobile;
-	}
-	public void setMobile(String mobile) 
-	{
-		this.mobile = mobile;
-	}
-	//toString method
-	public String toString() 
-	{
-		return "Patients [pid=" + pid + ", pname=" + pname + ", age=" + age + ", mobile=" + mobile + "]";
-	}
-
-	//method to add patients information
-	public void addPatient()
-	{
-		Utility u1;
-		u1=new Utility();
-		System.out.println("Enter Your Details ...");
-
-		System.out.println("Enter Name: ");
-		this.pname=u1.getString();
-		System.out.println();
-
-		System.out.println("Enter Id: ");
-		this.pid=u1.inputInteger();
-		System.out.println();
-
-		System.out.println("Enter Age: ");
-		this.age=u1.inputInteger();
-		System.out.println();
-
-		System.out.println("**");
-		this.mobile=u1.getString();
-		System.out.println("Enter Mobile Number: ");
-		this.mobile=u1.getString();
-		System.out.println();
-	}
 }

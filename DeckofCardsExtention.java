@@ -1,6 +1,4 @@
-/**
- * 
- */
+
 package com.bridgelabz.oops;
 
 import java.util.Random;
@@ -22,7 +20,7 @@ public class DeckofCardsExtention {
 		extended.dequeuePlayers();	//	dequeues players
 	}
 	
-	/** initialises queue and and adds players**/
+	/** Initializes queue and and adds players**/
 	void start() {
 		playerQueue = new MyQueue<Player>();
 		cardsArray = new int[4][13];

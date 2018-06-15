@@ -1,69 +1,56 @@
-/**
- * 
- */
 package com.bridgelabz.oops;
 
-import java.util.Date;
-
-/**
- * Created By:Medini P.D
- * Date:- 02/06/2018
- * 
- */
 public class Appointment {
- 
-	Integer did;
-	Date date;
-	//constructor
-	public Appointment(int did,Date date)
-	{ 
-		this.did=did;
-		this.date=date;
+	@Override
+	public String toString() {
+		return "Appointment [doctorName=" + doctorName + ", doctorId=" + doctorId + ", patientName=" + patientName
+				+ ", patientId=" + patientId + ", timestamp=" + timestamp + "]";
+	}
+	private String doctorName;
+	private String doctorId;
+	private String patientName;
+	private String patientId;
+	private String timestamp;
+
+	public String getDoctorName() {
+		return doctorName;
 	}
 
-	//getter and setter methods
-	public int getDid() 
-	{
-		return did;
-	}
-	public void setDid(int did) 
-	{
-		this.did = did;
+	public void setDoctorName(String doctorName) {
+		this.doctorName = doctorName;
 	}
 
-	public Date getDate() 
-	{
-		return date;
-	}
-	public void setDate(Date date) 
-	{
-		this.date = date;
+	public String getDoctorId() {
+		return doctorId;
 	}
 
-	public String toString() 
-	{
-		return "Appointment [did=" + did + ", date=" + date +  "]";
+	public void setDoctorId(String doctorId) {
+		this.doctorId = doctorId;
 	}
 
-	public int hashCode()
-	{
-    	return this.did.hashCode()+this.date.hashCode();
+	public String getPatientName() {
+		return patientName;
 	}
-	//checking for equality
-	public boolean equals(Object object)
-	{
-    	if (object == null) 
-			return false;
-    	if (object == this) 
-			return true;
-    	if (!(object instanceof Appointment))
-			return false;
-    	
-    	Appointment dA = (Appointment) object;
 
-		if((this.did==dA.did) && (this.date.equals(dA.date)))
-			return true;
-		else
-			return false;
+	public void setPatientName(String patientName) {
+		this.patientName = patientName;
 	}
+
+	public String getPatientId() {
+		return patientId;
+	}
+
+	public void setPatientId(String patientId) {
+		this.patientId = patientId;
+	}
+
+
+	public String getTimestamp() {
+		return timestamp;
+	}
+
+	public void setTimestamp(String timestamp) {
+		this.timestamp = timestamp;
+	}
+
 }
