@@ -1,0 +1,23 @@
+[
+	{
+		"doctorname": "mamta",
+		"doctorid": "103",
+		"specialization": "pediatrician",
+		"availabity": "am",
+		"count": 5
+	},
+	{
+		"doctorname": "aruna",
+		"doctorid": "11",
+		"specialization": "md",
+		"availabity": "pm",
+		"count": 5
+	},
+	{
+		"doctorname": "chaitra",
+		"doctorid": "120",
+		"specialization": "Neurologist",
+		"availabity": "both",
+		"count": 0
+	}
+]
