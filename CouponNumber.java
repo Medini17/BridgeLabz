@@ -37,5 +37,6 @@ public class CouponNumber {
 
 		}
 		System.out.println("no of times taken to genarate required no of coupon codes: " + noOftimes);
+	
 	}
 }
